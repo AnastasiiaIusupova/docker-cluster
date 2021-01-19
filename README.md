@@ -1,9 +1,9 @@
 # Задание 4. Использование Docker с БД, кластеризация
 
-Для того чтобы локально развернуть приложениt на Flask необходимо выполнить следующие действия:
-
 1.  Установить Docker или Docker Tools на ПК (Персональный компьютер) или ноутбук.
 
-2.  Запустить команду «sudo docker-compose up -d --build --force-recreate».
+2.  Стянуть образ с репозитория «docker pull anastasin01/docker-cluster»
 
-Можно использовать данное приложение, обращаясь к адресу «http://localhost:8080».
+3.  Запустить контейнер «docker run –it –p 5000:5000 –d anastasin01/docker-cluster»
+
+4.  Перейти по ссылке http://localhost:5000/ и http://localhost:5000/plus
